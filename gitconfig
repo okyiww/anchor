@@ -1,0 +1,8 @@
+[user]
+	name = okyiww
+	email = okyiww@gmail.com
+[credential]
+  helper = store
+[core]
+  autocrlf = input
+  ignorecase = true
