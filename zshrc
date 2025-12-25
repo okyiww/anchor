@@ -41,6 +41,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export https_proxy=http://127.0.0.1:6152
 export http_proxy=http://127.0.0.1:6152
 export all_proxy=socks5://127.0.0.1:6153
+export no_proxy="localhost,127.0.0.1,::1,.mycorp.local,192.168.0.0/16,10.0.0.0/8"
 
 # System Alias
 alias ls="lsd"
@@ -73,3 +74,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export KUBECONFIG=$HOME/.kube/config-okyiww
