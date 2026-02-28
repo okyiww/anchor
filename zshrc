@@ -75,4 +75,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-export KUBECONFIG=$HOME/.kube/config-okyiww
+# k9s
+export KUBECONFIG=$HOME/.kube/config
+
+# amp
+export PATH="$HOME/.local/bin:$PATH"
