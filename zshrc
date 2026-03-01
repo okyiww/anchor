@@ -57,6 +57,8 @@ alias rcset="rcup -v"
 alias vi="nvim"
 alias vim="nvim"
 alias cd="z"
+alias wb="chmod +x ~/.dotfiles/wechat-biz.sh && ./wechat-biz.sh auto"
+alias wrb="chmod +x ~/.dotfiles/wechat-biz.sh && ./wechat-biz.sh rebuild"
 
 # Added by Windsurf
 export PATH="/Users/okyiww/.codeium/windsurf/bin:$PATH"
