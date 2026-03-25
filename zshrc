@@ -46,8 +46,7 @@ export no_proxy="localhost,127.0.0.1,::1,.mycorp.local,192.168.0.0/16,10.0.0.0/8
 # System Alias
 alias ls="lsd"
 alias ll="lsd -l"
-alias c="cursor ."
-alias w="windsurf ."
+alias c="code ."
 alias ct="tmux new -s okyiww"
 alias t="tmux attach -t okyiww"
 alias d="tmux detach"
@@ -59,26 +58,16 @@ alias vim="nvim"
 alias cd="z"
 alias wb="chmod +x ~/.dotfiles/wechat-biz.sh && ~/.dotfiles/wechat-biz.sh auto"
 alias wrb="chmod +x ~/.dotfiles/wechat-biz.sh && ~/.dotfiles/wechat-biz.sh rebuild"
-
-# Added by Windsurf
-export PATH="/Users/okyiww/.codeium/windsurf/bin:$PATH"
-
-# Added by Windsurf
-export PATH="/Users/okyiww/.codeium/windsurf/bin:$PATH"
+alias work="claude --dangerously-skip-permissions"
 
 # Zoxide
 eval "$(zoxide init zsh)"
-
-# pnpm
-export PNPM_HOME="/Users/okyiww/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # k9s
 export KUBECONFIG=$HOME/.kube/config
 
 # amp
 export PATH="$HOME/.local/bin:$PATH"
+
+# secrets
+[ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
