@@ -41,7 +41,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export https_proxy=http://127.0.0.1:6152
 export http_proxy=http://127.0.0.1:6152
 export all_proxy=socks5://127.0.0.1:6153
-export no_proxy="localhost,127.0.0.1,::1,.mycorp.local,192.168.0.0/16,10.0.0.0/8"
+export no_proxy="localhost,127.0.0.1,::1,.mycorp.local,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,100.64.0.0/10,169.254.0.0/16,198.18.0.0/15,cgh-genai-gateway2-svc.cgh-genai-all-dev.svc.cluster.local.c504e58d3ee2e4328b81a3ce07647a3c7"
 
 # System Alias
 alias ls="lsd"
