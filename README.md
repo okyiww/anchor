@@ -27,7 +27,6 @@ git clone --depth 1 git@github.com:okyiww/anchor.git ~/.dotfiles
 
 rcup -v
 rcup -t wezterm
-rcup -t agents
 ```
 
 ## preview

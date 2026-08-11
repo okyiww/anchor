@@ -13,6 +13,7 @@ copybuffer
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source $ZSH/oh-my-zsh.sh
 
@@ -71,3 +72,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # secrets
 [ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
+
+export PATH="/Users/okyiww/.kimi-code/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
