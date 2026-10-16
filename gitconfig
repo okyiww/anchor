@@ -6,3 +6,9 @@
 [core]
   autocrlf = input
   ignorecase = true
+[credential "https://origin.cursor.com/git"]
+	helper = 
+	helper = !/Users/okyiww/.local/bin/origin credential-helper
+[credential "https://origin.cursor.com"]
+	helper = 
+	helper = !/Users/okyiww/.local/bin/origin credential-helper
